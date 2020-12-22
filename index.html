@@ -17,7 +17,7 @@
       <label for="TIPO_LOGRADOURO">
         Tipo do logradouro:
         <select name="TIPO_LOGRADOURO" id="TIPO_LOGRADOURO">
-          <option disabled selected>Selecione uma opção</option>
+          <option disabled selected value="">Selecione uma opção</option>
           <option value="AEROPORTO">Aeroporto</option>
           <option value="ALAMEDA">Alameda</option>
           <option value="ÁREA">Área</option>
@@ -89,62 +89,67 @@
     <fieldset>
       <legend>Coordenadas - Longitude</legend>
 
-      <label for="long-direction">
+      <label for="longitude.direction">
         Direção:
-        <select name="long-direction" id="long-direction">
-          <option disabled selected>Selecione uma opção</option>
+        <select name="longitude.direction" id="longitude.direction">
+          <option disabled selected value="">Selecione uma opção</option>
           <option value="W">Oeste</option>
           <option value="E">Leste</option>
         </select>
       </label>
 
-      <label for="long-degree">
+      <label for="longitude.degree">
         Grau:
-        <input type="text" name="long-degree" id="long-degree">
+        <input type="text" name="longitude.degree" id="longitude.degree">
       </label>
 
-      <label for="long-minute">
+      <label for="longitude.minute">
         Minuto:
-        <input type="text" name="long-minute" id="long-minute">
+        <input type="text" name="longitude.minute" id="longitude.minute">
       </label>
 
-      <label for="long-second">
+      <label for="longitude.second">
         Segundo:
-        <input type="text" name="long-second" id="long-second">
+        <input type="text" name="longitude.second" id="longitude.second">
       </label>
     </fieldset>
 
     <fieldset>
       <legend>Coordenadas - Latitude</legend>
 
-      <label for="lat-direction">
+      <label for="latitude.direction">
         Direção:
-        <select name="lat-direction" id="lat-direction">
-          <option disabled selected>Selecione uma opção</option>
+        <select name="latitude.direction" id="latitude.direction">
+          <option disabled selected value="">Selecione uma opção</option>
           <option value="N">Norte</option>
           <option value="S">Sul</option>
         </select>
       </label>
 
-      <label for="lat-degree">
+      <label for="latitude.degree">
         Grau:
-        <input type="text" name="lat-degree" id="lat-degree">
+        <input type="text" name="latitude.degree" id="latitude.degree">
       </label>
 
-      <label for="lat-minute">
+      <label for="latitude.minute">
         Minuto:
-        <input type="text" name="lat-minute" id="lat-minute">
+        <input type="text" name="latitude.minute" id="latitude.minute">
       </label>
 
-      <label for="lat-second">
+      <label for="latitude.second">
         Segundo:
-        <input type="text" name="lat-second" id="lat-second">
+        <input type="text" name="latitude.second" id="latitude.second">
       </label>
     </fieldset>
 
     <button type="submit">Confirmar</button>
   </form>
-  
-  <script src="js/main.js"></script>
+
+  <!-- I'm not using JS modules here for compatibilty reasons -->
+  <!-- index.js must be imported after all other modules -->
+  <script src="js/utils/handleJsonComplexStructures.js"></script>
+  <script src="js/utils/convertFormDataToJson.js"></script>
+  <script src="js/utils/convertDMSToDecimalDegrees.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
