@@ -9,6 +9,141 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <form id="form">
+    <fieldset>
+      <legend>Geral</legend>
+
+      <label for="TIPO_LOGRADOURO">
+        Tipo do logradouro:
+        <select name="TIPO_LOGRADOURO" id="TIPO_LOGRADOURO">
+          <option disabled selected>Selecione uma opção</option>
+          <option value="AEROPORTO">Aeroporto</option>
+          <option value="ALAMEDA">Alameda</option>
+          <option value="ÁREA">Área</option>
+          <option value="AVENIDA">Avenida</option>
+          <option value="CAMPO">Campo</option>
+          <option value="CHÁCARA">Chácara</option>
+          <option value="COLÔNIA">Colônia</option>
+          <option value="CONDOMÍNIO">Condomínio</option>
+          <option value="CONJUNTO">Conjunto</option>
+          <option value="DISTRITO">Distrito</option>
+          <option value="ESPLANADA">Esplanada</option>
+          <option value="ESTAÇÃO">Estação</option>
+          <option value="ESTRADA">Estrada</option>
+          <option value="FAVELA">Favela</option>
+          <option value="FAZENDA">Fazenda</option>
+          <option value="FEIRA">Feira</option>
+          <option value="JARDIM">Jardim</option>
+          <option value="LADEIRA">Ladeira</option>
+          <option value="LAGO">Lago</option>
+          <option value="LAGOA">Lagoa</option>
+          <option value="LARGO">Largo</option>
+          <option value="LOTEAMENTO">Loteamento</option>
+          <option value="MORRO">Morro</option>
+          <option value="NÚCLEO">Núcleo</option>
+          <option value="PARQUE">Parque</option>
+          <option value="PASSARELA">Passarela</option>
+          <option value="PÁTIO">Pátio</option>
+          <option value="PRAÇA">Praça</option>
+          <option value="QUADRA">Quadra</option>
+          <option value="RECANTO">Recanto</option>
+          <option value="RESIDENCIAL">Residencial</option>
+          <option value="RODOVIA">Rodovia</option>
+          <option value="RUA">Rua</option>
+          <option value="SETOR">Setor</option>
+          <option value="SÍTIO">Sítio</option>
+          <option value="TRAVESSA">Travessa</option>
+          <option value="TRECHO">Trecho</option>
+          <option value="TREVO">Trevo</option>
+          <option value="VALE">Vale</option>
+          <option value="VEREDA">Vereda</option>
+          <option value="VIA">Via</option>
+          <option value="VIADUTO">Viaduto</option>
+          <option value="VIELA">Viela</option>
+          <option value="VILA">Vila</option>
+        </select>
+      </label>
+
+      <label for="NOME_LOGRADOURO">
+        Nome do logradouro:
+        <input type="text" name="NOME_LOGRADOURO" id="NOME_LOGRADOURO">
+      </label>
+
+      <label for="NUMERO_DA_RESIDENCIA">
+        Número da residência:
+        <input type="text" name="NUMERO_DA_RESIDENCIA" id="NUMERO_DA_RESIDENCIA">
+      </label>
+
+      <label for="BAIRRO_LOCALIDADE">
+        Bairro/Localidade:
+        <input type="text" name="BAIRRO_LOCALIDADE" id="BAIRRO_LOCALIDADE">
+      </label>
+
+      <label for="COMPLEMENTO">
+        Complemento:
+        <input type="text" name="COMPLEMENTO" id="COMPLEMENTO">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Coordenadas - Longitude</legend>
+
+      <label for="long-direction">
+        Direção:
+        <select name="long-direction" id="long-direction">
+          <option disabled selected>Selecione uma opção</option>
+          <option value="W">Oeste</option>
+          <option value="E">Leste</option>
+        </select>
+      </label>
+
+      <label for="long-degree">
+        Grau:
+        <input type="text" name="long-degree" id="long-degree">
+      </label>
+
+      <label for="long-minute">
+        Minuto:
+        <input type="text" name="long-minute" id="long-minute">
+      </label>
+
+      <label for="long-second">
+        Segundo:
+        <input type="text" name="long-second" id="long-second">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Coordenadas - Latitude</legend>
+
+      <label for="lat-direction">
+        Direção:
+        <select name="lat-direction" id="lat-direction">
+          <option disabled selected>Selecione uma opção</option>
+          <option value="N">Norte</option>
+          <option value="S">Sul</option>
+        </select>
+      </label>
+
+      <label for="lat-degree">
+        Grau:
+        <input type="text" name="lat-degree" id="lat-degree">
+      </label>
+
+      <label for="lat-minute">
+        Minuto:
+        <input type="text" name="lat-minute" id="lat-minute">
+      </label>
+
+      <label for="lat-second">
+        Segundo:
+        <input type="text" name="lat-second" id="lat-second">
+      </label>
+    </fieldset>
+
+    <button type="submit">Confirmar</button>
+  </form>
   
   <script src="js/main.js"></script>
 </body>
