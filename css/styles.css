@@ -147,3 +147,7 @@ button {
   color: #fff;
   transition: 0.2s background-color;
 }
+
+#form footer > button:hover {
+  background-color: #03a84d;
+}
