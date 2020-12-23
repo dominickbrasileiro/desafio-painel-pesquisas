@@ -7,16 +7,24 @@
   <title>Desafio - Painel Pesquisas</title>
 
   <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="assets/images/logo.png" alt="Painel Pesquisas e Consultoria">
+    </div>
+  </header>
 
   <form id="form">
     <fieldset>
-      <legend>Geral</legend>
+      <legend>Informações Gerais</legend>
 
       <label for="TIPO_LOGRADOURO">
-        Tipo do logradouro:
-        <select name="TIPO_LOGRADOURO" id="TIPO_LOGRADOURO">
+        <span class="label__text">Tipo do logradouro:</span>
+        <select name="TIPO_LOGRADOURO" id="TIPO_LOGRADOURO" required>
           <option disabled selected value="">Selecione uma opção</option>
           <option value="AEROPORTO">Aeroporto</option>
           <option value="ALAMEDA">Alameda</option>
@@ -66,23 +74,47 @@
       </label>
 
       <label for="NOME_LOGRADOURO">
-        Nome do logradouro:
-        <input type="text" name="NOME_LOGRADOURO" id="NOME_LOGRADOURO">
+        <span class="label__text">Nome do logradouro:</span>
+        <input
+          type="text"
+          name="NOME_LOGRADOURO"
+          id="NOME_LOGRADOURO"
+          placeholder="Ex: Ibirapuera"
+          required
+        >
       </label>
 
       <label for="NUMERO_DA_RESIDENCIA">
-        Número da residência:
-        <input type="text" name="NUMERO_DA_RESIDENCIA" id="NUMERO_DA_RESIDENCIA">
+        <span class="label__text">Número da residência:</span>
+        <input
+          type="text"
+          name="NUMERO_DA_RESIDENCIA"
+          id="NUMERO_DA_RESIDENCIA"
+          placeholder="Ex: 705"
+          required
+        >
       </label>
 
       <label for="BAIRRO_LOCALIDADE">
-        Bairro/Localidade:
-        <input type="text" name="BAIRRO_LOCALIDADE" id="BAIRRO_LOCALIDADE">
+        <span class="label__text">Bairro/Localidade:</span>
+        <input
+          type="text"
+          name="BAIRRO_LOCALIDADE"
+          id="BAIRRO_LOCALIDADE"
+          placeholder="Ex: Floresta"
+          required
+        >
       </label>
 
       <label for="COMPLEMENTO">
-        Complemento:
-        <input type="text" name="COMPLEMENTO" id="COMPLEMENTO">
+        <span class="label__text">Complemento:</span>
+        <input
+          type="text"
+          name="COMPLEMENTO"
+          id="COMPLEMENTO"
+          placeholder="Ex: Sala D"
+          required
+         >
       </label>
     </fieldset>
 
@@ -90,8 +122,8 @@
       <legend>Coordenadas - Longitude</legend>
 
       <label for="longitude.direction">
-        Direção:
-        <select name="longitude.direction" id="longitude.direction">
+        <span class="label__text">Direção:</span>
+        <select name="longitude.direction" id="longitude.direction" required>
           <option disabled selected value="">Selecione uma opção</option>
           <option value="W">Oeste</option>
           <option value="E">Leste</option>
@@ -99,18 +131,36 @@
       </label>
 
       <label for="longitude.degree">
-        Grau:
-        <input type="text" name="longitude.degree" id="longitude.degree">
+        <span class="label__text">Grau:</span>
+        <input
+          type="text"
+          name="longitude.degree"
+          id="longitude.degree"
+          placeholder="Ex: 26"
+          required
+        >
       </label>
 
       <label for="longitude.minute">
-        Minuto:
-        <input type="text" name="longitude.minute" id="longitude.minute">
+        <span class="label__text">Minuto:</span>
+        <input
+          type="text"
+          name="longitude.minute"
+          id="longitude.minute"
+          placeholder="Ex: 20"
+          required
+        >
       </label>
 
       <label for="longitude.second">
-        Segundo:
-        <input type="text" name="longitude.second" id="longitude.second">
+        <span class="label__text">Segundo:</span>
+        <input
+          type="text"
+          name="longitude.second"
+          id="longitude.second"
+          placeholder="Ex: 21.163"
+          required
+        >
       </label>
     </fieldset>
 
@@ -118,31 +168,60 @@
       <legend>Coordenadas - Latitude</legend>
 
       <label for="latitude.direction">
-        Direção:
-        <select name="latitude.direction" id="latitude.direction">
+        <span class="label__text">Direção:</span>
+        <select name="latitude.direction" id="latitude.direction" required>
           <option disabled selected value="">Selecione uma opção</option>
           <option value="N">Norte</option>
           <option value="S">Sul</option>
         </select>
       </label>
 
+
       <label for="latitude.degree">
-        Grau:
-        <input type="text" name="latitude.degree" id="latitude.degree">
+        <span class="label__text">Grau:</span>
+        <input
+          type="text"
+          name="latitude.degree"
+          id="latitude.degree"
+          placeholder="Ex: 48"
+          required
+        >
       </label>
 
       <label for="latitude.minute">
-        Minuto:
-        <input type="text" name="latitude.minute" id="latitude.minute">
+        <span class="label__text">Minuto:</span>
+        <input
+          type="text"
+          name="latitude.minute"
+          id="latitude.minute"
+          placeholder="Ex: 51"
+          required
+        >
       </label>
 
       <label for="latitude.second">
-        Segundo:
-        <input type="text" name="latitude.second" id="latitude.second">
+        <span class="label__text">Segundo:</span>
+        <input
+          type="text"
+          name="latitude.second"
+          id="latitude.second"
+          placeholder="Ex: 16.7111"
+          required
+        >
       </label>
     </fieldset>
 
-    <button type="submit">Confirmar</button>
+    <footer>
+      <div>
+        <img src="assets/icons/attention.svg" alt="Atenção!" />
+        <div>
+          <strong>Importante!</strong>
+          <p>Preencha todos os dados corretamente.</p>
+        </div>
+      </div>
+
+      <button type="submit">Confirmar</button>
+    </footer>
   </form>
 
   <!-- I'm not using JS modules here for compatibilty reasons -->
