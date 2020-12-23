@@ -37,6 +37,8 @@
     delete data.latitude;
 
     console.log(data);
+
+    window.alert('Tudo certo! Verifique o console.')
   }
 
   const form = document.getElementById('form');
