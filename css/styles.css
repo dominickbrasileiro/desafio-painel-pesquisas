@@ -24,6 +24,16 @@ button {
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -31,6 +41,22 @@ button {
 
   padding: 40px 0 80px;
   background-color: #232323;
+}
+
+.header .header__logo {
+  animation: fadeIn 1.618s;
+}
+
+@keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #form {
@@ -46,6 +72,7 @@ button {
   flex-direction: column;
   padding: 0 64px;
   border: 0;
+  animation: appearFromRight 0.618s;
 }
 
 #form fieldset + fieldset {
