@@ -43,7 +43,11 @@ button {
   background-color: #232323;
 }
 
-.header .header__logo {
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   animation: fadeIn 1.618s;
 }
 
@@ -128,7 +132,6 @@ button {
 
 #form footer > div {
   display: flex;
-
 }
 
 #form footer > div > img {
