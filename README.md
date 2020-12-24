@@ -61,7 +61,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/dominickbrasileiro/desafio-painle-pesquisas/blob/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/dominickbrasileiro/desafio-painel-pesquisas/blob/master/LICENSE) para mais detalhes.
 
 ---
 
