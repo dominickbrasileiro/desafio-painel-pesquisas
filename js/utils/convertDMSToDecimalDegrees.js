@@ -3,5 +3,5 @@
 function convertDMSToDecimalDegrees({ degree, minute, second }) {
   const decimalDegrees = degree + (minute / 60) + (second / 3600);
 
-  return decimalDegrees.toPrecision(7);
+  return Number(decimalDegrees.toPrecision(7));
 }
