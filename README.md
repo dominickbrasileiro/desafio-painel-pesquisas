@@ -29,7 +29,7 @@ casa em casa coletando informações sobre a população local.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O desafio consiste em criar um formulário (Página WEB), onde os pesquisadores
 vão inserir os endereços dos moradores e esses dados serão estruturados em JSON. As
-coordenadas geográficas deverão ser inseridas manualmente via formulário em formato de graus, minutos e segundos (DMS) e transformadas em graus decimais (DD).
+coordenadas geográficas deverão ser inseridas manualmente via formulário em formato de graus, minutos e segundos (GMS) e transformadas em graus decimais (GD).
 
 Exemplo de estruturação dos dados:
 
@@ -51,19 +51,19 @@ Durante o desenvolvimento do projeto, me deparei com a situação na qual eu pre
 
 <br />
 
-**DD = (M / 60) + (S / 3600) + D**
+**GD = (M / 60) + (S / 3600) + G**
 
 <br />
 
 Onde:
 
-**DD**: degraus decimais
+**GD**: graus decimais
 
 **M**: minutos
 
 **S**: segundos
 
-**D**: degraus
+**G**: graus
 
 <br />
 
