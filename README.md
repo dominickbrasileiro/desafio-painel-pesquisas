@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="#sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aprendizado">Aprendizado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-rodar">Como Rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
@@ -44,6 +45,35 @@ Exemplo de estruturação dos dados:
 }
 ```
 
+## Aprendizado
+
+Durante o desenvolvimento do projeto, me deparei com a situação na qual eu precisaria transformar graus, minutos e segundos para graus decimais. Conforme requisitado no desafio, eu não poderia copiar códigos prontos da web. Então, fui estudar como essa conversão é feita e cheguei na seguinte solução:
+
+<br />
+
+**DD = (M / 60) + (S / 3600) + D**
+
+<br />
+
+Onde:
+
+**DD**: degraus decimais
+
+**M**: minutos
+
+**S**: segundos
+
+**D**: degraus
+
+<br />
+
+Quando falamos de coordenadas geográficas, depois de aplicar a fórmula é necessário verificar o sinal do resultado. No caso de **latitude**, o valor deverá ser **positivo** ao norte e **negativo** ao sul. No caso de **longitude**, o valor deverá ser **negativo** ao oeste e **positivo** ao leste.
+
+<br />
+
+Links úteis:
+
+- [How To: Calculate Decimal Degrees from Degrees Minutes Seconds (DMS) manually](https://support.esri.com/en/technical-article/000007058)
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -56,8 +86,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Clone o repositório: `git clone https://github.com/dominickbrasileiro/desafio-painel-pesquisas`;
 - Vá até o repositório: `cd desafio-painel-pesquisas`;
-- Abra o arquivo `index.html` utilizado o seu navegador de preferência;
-- Pronto!
+- Abra o arquivo `index.html` utilizando o seu navegador de preferência e pronto!
 
 ## Licença
 
